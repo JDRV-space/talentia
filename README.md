@@ -2,11 +2,7 @@
 
 # Talentia
 
----
-
-**Intelligent Recruitment Management for Seasonal Operations**
-
-*Automate recruiter assignments, deduplicate candidates, and forecast hiring demand.*
+Intelligent recruitment management for seasonal operations. Automates recruiter assignments, deduplicates candidates, and forecasts hiring demand.
 
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com/)
@@ -20,17 +16,15 @@
 
 </div>
 
----
-
 ## Features
 
-- **Smart Assignment Engine** — Weighted algorithm matching recruiters to positions by zone, capability level, and workload balance
-- **Spanish Phonetic Deduplication** — Custom engine handling yeismo, seseo, h muda, and Quechua/Aymara surname patterns
-- **Demand Forecasting** — Production data to headcount predictions with seasonal crop multipliers
-- **Excel Pipeline** — Browser-side parsing of 90MB+ files with zero server upload limits
-- **SLA Tracking** — Priority queues (Critical / Technical / Standard) with deadline alerts
-- **Workload Redistribution** — Automatic proposals to rebalance overloaded recruiters
-- **Full Auth** — Supabase Auth with Row-Level Security policies on every table
+- **Smart Assignment Engine:** Weighted algorithm matching recruiters to positions by zone, capability level, and workload balance
+- **Spanish Phonetic Deduplication:** Custom engine handling yeismo, seseo, h muda, and Quechua/Aymara surname patterns
+- **Demand Forecasting:** Production data to headcount predictions with seasonal crop multipliers
+- **Excel Pipeline:** Browser-side parsing of 90MB+ files with zero server upload limits
+- **SLA Tracking:** Priority queues (Critical / Technical / Standard) with deadline alerts
+- **Workload Redistribution:** Automatic proposals to rebalance overloaded recruiters
+- **Full Auth:** Supabase Auth with Row-Level Security policies on every table
 
 ## Tech Stack
 
