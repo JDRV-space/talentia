@@ -1,0 +1,6 @@
+# Large files not needed for deployment
+*.xlsx
+*.docx
+
+# Development files
+.npm-cache/

@@ -1,0 +1,15 @@
+{
+  "functions": {
+    "src/app/api/upload/route.ts": {
+      "maxDuration": 60,
+      "memory": 1024
+    },
+    "src/app/api/upload-json/route.ts": {
+      "maxDuration": 60,
+      "memory": 1024
+    },
+    "src/app/api/candidates/check-duplicate-batch/route.ts": {
+      "maxDuration": 30
+    }
+  }
+}
