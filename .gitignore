@@ -53,11 +53,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .npm-cache/
-.claude/
 .env*.local
-
-# AI config
-CLAUDE.md
 
 # Logs
 *.log
