@@ -1,8 +1,12 @@
 <div align="center">
 
-# Talentia
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:6366f1,100:8b5cf6&height=220&section=header&text=talentia&fontSize=80&fontColor=ffffff&animation=fadeIn&desc=Recruitment+intelligence+for+seasonal+operations&descAlignY=65&descSize=16&fontAlignY=38" width="100%"/>
 
-Intelligent recruitment management for seasonal operations. Automates recruiter assignments, deduplicates candidates, and forecasts hiring demand.
+<p>
+  <img src="https://readme-typing-svg.demolab.com/?font=Inter&size=20&duration=3000&pause=1000&color=8B5CF6&center=true&vCenter=true&width=700&lines=Auto-assigns+recruiters+to+seasonal+demand;Spanish+phonetic+dedup+(yeismo%2C+seseo%2C+h+muda);Demand+forecasting+%2B+smart+matching;Next.js+%2B+Supabase+%2B+TypeScript" alt="Typing SVG" />
+</p>
+
+<img src="./assets/talentia-demo.svg" alt="Talentia Demo" width="100%"/>
 
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com/)
@@ -12,7 +16,7 @@ Intelligent recruitment management for seasonal operations. Automates recruiter 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/JDRV-space/talentia/pulls)
 
-[Features](#features) · [Getting Started](#getting-started) · [Architecture](#architecture) · [Key Algorithms](#key-algorithms) · [License](#license)
+[Features](#features) - [Getting Started](#getting-started) - [Architecture](#architecture) - [Key Algorithms](#key-algorithms) - [License](#license)
 
 </div>
 
@@ -232,3 +236,7 @@ npm run test:coverage # Coverage report
 ## License
 
 [MIT](LICENSE)
+
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:6366f1,100:8b5cf6&height=100&section=footer&animation=fadeIn" width="100%"/>
+</div>

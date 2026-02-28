@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300">
+  <style>
+    @keyframes drawWave { from { stroke-dashoffset: 1200; } to { stroke-dashoffset: 0; } }
+    @keyframes fillArea { from { opacity: 0; } to { opacity: 0.15; } }
+    @keyframes dot1 { 0%, 30% { opacity: 0; } 40%, 100% { opacity: 1; } }
+    @keyframes dot2 { 0%, 40% { opacity: 0; } 50%, 100% { opacity: 1; } }
+    @keyframes dot3 { 0%, 50% { opacity: 0; } 60%, 100% { opacity: 1; } }
+    @keyframes mergeLeft { 0%, 50% { transform: translateX(0); opacity: 1; } 70% { transform: translateX(60px); opacity: 0.5; } 75%, 100% { transform: translateX(60px); opacity: 0; } }
+    @keyframes mergeRight { 0%, 50% { transform: translateX(0); opacity: 1; } 70% { transform: translateX(-60px); opacity: 0.5; } 75%, 100% { transform: translateX(-60px); opacity: 0; } }
+    @keyframes mergedAppear { 0%, 74% { opacity: 0; transform: scale(0.8); } 80% { opacity: 1; transform: scale(1.05); } 85%, 100% { opacity: 1; transform: scale(1); } }
+    @keyframes checkAppear { 0%, 84% { opacity: 0; } 90%, 100% { opacity: 1; } }
+    .bg { fill: #0d1117; }
+    .wave { fill: none; stroke: #8b5cf6; stroke-width: 3; stroke-dasharray: 1200; animation: drawWave 2s ease-out forwards; }
+    .wave-fill { fill: #8b5cf6; opacity: 0; animation: fillArea 1s 2s forwards; }
+    .recruiter-dot { r: 6; fill: #06b6d4; stroke: #0d1117; stroke-width: 2; }
+    .d1 { animation: dot1 3s both; }
+    .d2 { animation: dot2 3s both; }
+    .d3 { animation: dot3 3s both; }
+    .month { fill: #555; font-family: 'Courier New', monospace; font-size: 10px; text-anchor: middle; }
+    .section-label { fill: #8b5cf6; font-family: 'Courier New', monospace; font-size: 11px; letter-spacing: 2px; }
+    .axis { stroke: #333; stroke-width: 1; }
+    .dedup-box { fill: #1a1a2e; rx: 8; stroke: #333; stroke-width: 1; }
+    .name-box { fill: #12121f; rx: 6; }
+    .name-text { fill: #e0e0e0; font-family: 'Courier New', monospace; font-size: 14px; text-anchor: middle; }
+    .merged-text { fill: #06b6d4; font-family: 'Courier New', monospace; font-size: 14px; text-anchor: middle; font-weight: 700; }
+    .phonetic-label { fill: #666; font-family: 'Courier New', monospace; font-size: 10px; text-anchor: middle; }
+    .ml { animation: mergeLeft 5s infinite; }
+    .mr { animation: mergeRight 5s infinite; }
+    .ma { animation: mergedAppear 5s infinite; }
+    .ca { animation: checkAppear 5s infinite; }
+  </style>
+  <rect class="bg" width="800" height="300" rx="16"/>
+  <text class="section-label" x="40" y="25">DEMAND FORECAST</text>
+  <line class="axis" x1="60" y1="35" x2="60" y2="140"/>
+  <line class="axis" x1="60" y1="140" x2="760" y2="140"/>
+  <path class="wave-fill" d="M60,110 Q160,30 260,50 Q360,70 460,35 Q560,0 660,60 Q710,80 760,100 L760,140 L60,140 Z"/>
+  <path class="wave" d="M60,110 Q160,30 260,50 Q360,70 460,35 Q560,0 660,60 Q710,80 760,100"/>
+  <circle class="recruiter-dot d1" cx="200" cy="55"/>
+  <circle class="recruiter-dot d2" cx="460" cy="35"/>
+  <circle class="recruiter-dot d3" cx="660" cy="60"/>
+  <text class="month" x="110" y="156">ENE</text>
+  <text class="month" x="260" y="156">MAR</text>
+  <text class="month" x="410" y="156">JUL</text>
+  <text class="month" x="560" y="156">SEP</text>
+  <text class="month" x="710" y="156">DIC</text>
+  <rect class="dedup-box" x="30" y="175" width="740" height="105"/>
+  <text class="section-label" x="50" y="197">SPANISH PHONETIC DEDUPLICATION</text>
+  <g class="ml">
+    <rect class="name-box" x="100" y="215" width="180" height="30"/>
+    <text class="name-text" x="190" y="235">Rodriguez, Juan</text>
+  </g>
+  <g class="mr">
+    <rect class="name-box" x="480" y="215" width="180" height="30"/>
+    <text class="name-text" x="570" y="235">Rodriges, Juana</text>
+  </g>
+  <g class="ma">
+    <rect x="300" y="210" width="160" height="40" rx="6" fill="#0d2d3d" stroke="#06b6d4" stroke-width="2"/>
+    <text class="merged-text" x="380" y="235">1 unique record</text>
+  </g>
+  <text style="fill:#00c853;font-size:20px;text-anchor:middle;" class="ca" x="380" y="208">&#10003;</text>
+  <text class="phonetic-label" x="380" y="270">yeismo (ll=y) | seseo (s=c=z) | h muda (h=silent)</text>
+</svg>
