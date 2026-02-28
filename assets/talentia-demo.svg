@@ -58,5 +58,4 @@
     <text class="merged-text" x="380" y="235">1 unique record</text>
   </g>
   <text style="fill:#00c853;font-size:20px;text-anchor:middle;" class="ca" x="380" y="208">&#10003;</text>
-  <text class="phonetic-label" x="380" y="270">phonetic dedup: ll=y, s=c=z, h=silent</text>
 </svg>
