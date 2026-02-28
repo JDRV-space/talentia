@@ -1,10 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:6366f1,100:8b5cf6&height=220&section=header&text=talentia&fontSize=80&fontColor=ffffff&animation=fadeIn&desc=Recruitment+intelligence+for+seasonal+operations&descAlignY=65&descSize=16&fontAlignY=38" width="100%"/>
-
-<p>
-  <img src="https://readme-typing-svg.demolab.com/?font=Inter&size=20&duration=3000&pause=1000&color=8B5CF6&center=true&vCenter=true&width=700&lines=Auto-assigns+recruiters+to+seasonal+demand;Spanish+phonetic+dedup+(yeismo%2C+seseo%2C+h+muda);Demand+forecasting+%2B+smart+matching;Next.js+%2B+Supabase+%2B+TypeScript" alt="Typing SVG" />
-</p>
+<img src="./assets/header.svg" alt="TALENTIA" width="100%"/>
 
 <img src="./assets/talentia-demo.svg" alt="Talentia Demo" width="100%"/>
 
@@ -237,6 +233,3 @@ npm run test:coverage # Coverage report
 
 [MIT](LICENSE)
 
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:6366f1,100:8b5cf6&height=100&section=footer&animation=fadeIn" width="100%"/>
-</div>

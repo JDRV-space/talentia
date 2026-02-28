@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 180">
+  <style>
+    @keyframes dotLeft { 0% { cx: 260; } 40%, 100% { cx: 340; } }
+    @keyframes dotRight { 0% { cx: 540; } 40%, 100% { cx: 460; } }
+    @keyframes lineGrow {
+      0%, 30% { stroke-dashoffset: 120; }
+      60%, 100% { stroke-dashoffset: 0; }
+    }
+    @keyframes pulseLeft {
+      0%, 100% { r: 6; opacity: 0.8; }
+      50% { r: 8; opacity: 1; }
+    }
+    @keyframes pulseRight {
+      0%, 100% { r: 6; opacity: 0.8; }
+      50% { r: 8; opacity: 1; }
+    }
+    .dot-candidate {
+      animation: dotLeft 3s ease-in-out infinite, pulseLeft 3s ease-in-out infinite;
+    }
+    .dot-job {
+      animation: dotRight 3s ease-in-out infinite, pulseRight 3s ease-in-out infinite;
+    }
+    .connect-line {
+      stroke-dasharray: 120;
+      animation: lineGrow 3s ease-in-out infinite;
+    }
+  </style>
+  <rect width="800" height="180" fill="#0d1117"/>
+  <!-- TALENTIA title -->
+  <text x="400" y="55" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="48" font-weight="700" fill="#6366f1" letter-spacing="8">TALENTIA</text>
+  <!-- Subtle line under title -->
+  <line x1="280" y1="68" x2="520" y2="68" stroke="#6366f1" stroke-width="0.5" opacity="0.3"/>
+  <!-- Connection animation -->
+  <g transform="translate(0, 10)">
+    <!-- Candidate dot (left, moves right) -->
+    <circle cy="90" r="6" fill="#6366f1" class="dot-candidate"/>
+    <!-- Job dot (right, moves left) -->
+    <circle cy="90" r="6" fill="#818cf8" class="dot-job"/>
+    <!-- Connecting line -->
+    <line x1="340" y1="90" x2="460" y2="90" stroke="#6366f1" stroke-width="1.5" class="connect-line" opacity="0.7"/>
+    <!-- Labels -->
+    <text x="260" y="115" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#6b7280">candidate</text>
+    <text x="540" y="115" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#6b7280">position</text>
+  </g>
+  <!-- Tagline -->
+  <text x="400" y="150" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#8b949e">Open source job matching platform</text>
+</svg>
